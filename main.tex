@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{subfiles}
+\usepackage[style=authoryear,maxcitenames=2]{biblatex}
+
+\bibliography{bibliography}
+\graphicspath{{images/}{../images/}}
+\title{Thesis Template}
+\author{Pedro}
+\date{ }
+
+\begin{document}
+\maketitle
+\subfile{sections/introduction}
+\subfile{sections/deeper_in_problem}
+\subfile{sections/conclusion}
+\printbibliography[title={Books}, type=book]
+\printbibliography[title={Articles},type=article]
+\printbibliography[title={Online},type=online]
+\end{document}
